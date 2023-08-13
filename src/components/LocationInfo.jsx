@@ -4,10 +4,10 @@ const LocationInfo = ({ currentLocation }) => {
   return (
     <section className="grid gap-4">
       <h2 className="text-[#8EFF8B] font-medium text-center">
-        {" "}
-        {`¡ Wellcome to the ${currentLocation?.name} universe!`}
+       
+        ¡ Wellcome to the <span className="font-bold text-xl">{currentLocation?.name}</span> universe!
       </h2>
-      <ul className="text-center">
+      <ul className="flex  justify-around ">
         <li>
           <span className="text-stone-600 font-medium">Type:</span>
           <span className="font-semibold">{currentLocation?.type}</span>

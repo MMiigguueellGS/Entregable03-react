@@ -37,7 +37,7 @@ function App() {
         </div>
       </header>
       <main className=" bg-[url('/images/bg-main.png')]  min-h-screen  min-w-screen font-Fira-Code  bg-cover  bg-full  ">
-        <section className=" text-white grid justify-center gap-6">
+        <section className=" text-white grid justify-center  gap-6">
           <LocationForm handleSubmit={handleSubmit} />
           <LocationInfo currentLocation={currentLocation} />
           <ResidentList
