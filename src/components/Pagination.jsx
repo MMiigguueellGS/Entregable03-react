@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const Pagination = ({ pages,setCurrentPage,CurrentPage}) => {
+const Pagination = () => {
   return (
     <ul className="flex justify-center">
       {pages.map((page) => (
@@ -9,5 +9,6 @@ const Pagination = ({ pages,setCurrentPage,CurrentPage}) => {
       ))}
     </ul>
   );
-};
-export default Pagination;
+}
+
+export default Pagination

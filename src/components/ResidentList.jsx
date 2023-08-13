@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ResidentCard from "./ResidentCard";
-import Pagination from "./pagination";
+import Pagination from "./Pagination";
+
 
 const INITIAL_PAGE = 1
 
