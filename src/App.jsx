@@ -33,11 +33,23 @@ function App() {
     <>
       <header className="bg-[url('/images/background-header.png')] w-full min-h-[280px] flex justify-center items-center ">
         <div className="  bg-cover  bg-center h-[300px] flex justify-center items-center relative">
-          <img className="w-[800px] h-[500px] relative "  src="/images/Eclipse-green.png" alt="" />
-          <img className="w-[230px] animate-rotate absolute" src="/images/sol-completo.png" alt="" />
-          <img className="w-[300px] absolute bottom-[20%]" src="/images/logo.png" alt="" />
-        </div>
+          <img
+            className="w-[230px] animate-rotate absolute"
+            src="/images/sol-completo.png"
+            alt=""
+          />
+          <img
+            className="w-[500px] h-[300px] relative "
+            src="/images/sombra.png"
+            alt=""
+          />
 
+          <img
+            className="w-[300px] absolute bottom-[20%]"
+            src="/images/logo.png"
+            alt=""
+          />
+        </div>
       </header>
       <main className=" bg-[url('/images/bg-main.png')]  min-h-screen  min-w-screen font-Fira-Code  bg-cover  bg-full  ">
         <section className=" text-white grid justify-center  gap-6">
