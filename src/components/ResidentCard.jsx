@@ -26,9 +26,9 @@ const ResidentCard = ({ residentUrl }) => {
       <section className=" p-3 w-full ">
         <h3 className="font-bold text-[28px] truncate">{ResidentInfo?.name}</h3>
         <ul className="border-t-2 border-[#8fff8b44]">
-          <li className="grid grid-cols-2"><span className="text-stone-600 font-medium">Species</span> <span className="font-semibold truncate">{ResidentInfo?.species}</span></li>
-          <li className="grid grid-cols-2"><span className="text-stone-600 font-medium" >Origin </span><span className="font-semibold truncate">{ResidentInfo?.origin.name}</span></li>
-          <li className="grid grid-cols-2"><span className="text-stone-600 font-medium">Times apper</span><span className="font-semibold truncate">{ResidentInfo?.episode.length}</span> </li>
+          <li className="grid grid-cols-2"><span className="text-[#938686] font-medium">Species</span> <span className="font-semibold truncate">{ResidentInfo?.species}</span></li>
+          <li className="grid grid-cols-2"><span className="text-[#938686] font-medium" >Origin </span><span className="font-semibold truncate">{ResidentInfo?.origin.name}</span></li>
+          <li className="grid grid-cols-2"><span className="text-[#938686] font-medium">Times apper</span><span className="font-semibold truncate">{ResidentInfo?.episode.length}</span> </li>
         </ul>
       </section>
     </article>
