@@ -1,19 +1,23 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import "./styles/header.css";
+// import "./styles/loader.css";
 import axios from "axios";
 import { getRandomDimension } from "./utils/random";
 import LocationForm from "./components/LocationForm";
 import LocationInfo from "./components/LocationInfo";
 import ResidentList from "./components/ResidentList";
+// import Loader from "./components/Loader";
 
 function App() {
   const [currentLocation, setCurrentLocation] = useState(null);
+  // const [isLoading, setIsLoading] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newLocation = e.target.newLocation.value;
     fecthDimension(newLocation);
+
   };
 
   const fecthDimension = (idLocation) => {
@@ -27,18 +31,31 @@ function App() {
   useEffect(() => {
     const radomDimension = getRandomDimension(126);
     fecthDimension(radomDimension);
+    setTimeout(()=>setIsLoading(false),2000)
   }, []);
 
   return (
     <>
+      {/* {isLoading && <Loader />} */}
       <header className="bg-[url('/images/background-header.png')] w-full min-h-[280px] flex justify-center items-center ">
         <div className="  bg-cover  bg-center h-[300px] flex justify-center items-center relative">
-        <img className="w-[230px] animate-rotate absolute" src="/images/sol-completo.png" alt="" />
-          <img className="w-[400px] h-[300px] relative "  src="/images/sombra.png" alt="" />
-          
-          <img className="w-[300px] absolute bottom-[20%]" src="/images/logo.png" alt="" />
-        </div>
+          <img
+            className="w-[230px] animate-rotate absolute"
+            src="/images/sol-completo.png"
+            alt=""
+          />
+          <img
+            className="w-[400px] h-[300px] relative "
+            src="/images/sombra.png"
+            alt=""
+          />
 
+          <img
+            className="w-[300px] absolute bottom-[20%]"
+            src="/images/logo.png"
+            alt=""
+          />
+        </div>
       </header>
       <main className=" bg-[url('/images/bg-main.png')]  min-h-screen  min-w-screen font-Fira-Code  bg-cover  bg-full  ">
         <section className=" text-white grid justify-center  gap-6">
