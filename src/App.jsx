@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import "./styles/header.css";
-// import "./styles/loader.css";
+import "./styles/loader.css";
 import axios from "axios";
 import { getRandomDimension } from "./utils/random";
 import LocationForm from "./components/LocationForm";
 import LocationInfo from "./components/LocationInfo";
 import ResidentList from "./components/ResidentList";
-// import Loader from "./components/Loader";
+import Loader from "./components/Loader";
 
 function App() {
   const [currentLocation, setCurrentLocation] = useState(null);
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      {/* {isLoading && <Loader />} */}
+      {isLoading && <Loader />}
       <header className="bg-[url('/images/background-header.png')] w-full min-h-[280px] flex justify-center items-center ">
         <div className="  bg-cover  bg-center h-[300px] flex justify-center items-center relative">
           <img

@@ -4,12 +4,12 @@ const Loader = () => {
   return (
     <section className="z-[100] fixed  left-0 h-screen w-screen  bg-black/95 flex justify-center items-center ">
       <section className="grid gap-4">
-        {/* texto del loader */}
+    
         <h2 className="text-white text-center efect__loader font-lato">
           Rick & Morty
         </h2>
 
-        {/* Iconos de los climas */}
+      
         <div className="grid  grid-cols-6 gap-1 rounded-2xl  bg-transparent justify-around items-center w-[260px] ">
           <div className="bg-[url('/images/header-logo.png')] bg-cover bg-center displace loader__animation1"></div>
           <div className="bg-[url('/images/header-logo.png')] bg-cover bg-center displace  loader__animation2 "></div>
