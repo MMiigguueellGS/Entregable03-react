@@ -2,10 +2,10 @@ import React from "react";
 
 const Loader = () => {
   return (
-    <section className="z-[100] fixed  left-0 h-screen w-screen  bg-black/95 flex justify-center items-center ">
+    <section className="z-[100] fixed  left-0 h-screen w-screen  bg-black/100 flex justify-center items-center ">
       <section className="grid gap-4">
     
-        <h2 className="text-white text-center efect__loader font-lato">
+        <h2 className="text-[#8EFF8B] text-center efect__loader font-bold font-Fira-Code">
           Rick & Morty
         </h2>
 

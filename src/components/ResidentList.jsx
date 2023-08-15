@@ -30,7 +30,7 @@ const ResidentList = ({ residents,currentLocation }) => {
   console.log(residentsInPage)
   return (
     <section className="grid gap-8 pb-10  justify-center items-center" >
-      <section className="flex flex-wrap gap-6 justify-center max-w-[1460px]">
+      <section className="flex flex-wrap gap-6 justify-center max-w-[1260px]">
       {/* // grid gap-7 px-2  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[1200px] mx-auto */}
         {residentsInPage.map((resident) => (
           <ResidentCard key={resident} residentUrl={resident} />
